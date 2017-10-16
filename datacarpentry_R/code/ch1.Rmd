@@ -1,0 +1,27 @@
+---
+title: "challenge"
+author: "Lin He"
+date: "August 23, 2017"
+output:
+  html_document: default
+  pdf_document: default
+  word_document: default
+---
+
+loading ggplot2 package
+```{R load}
+library(ggplot2)
+```
+
+read the portal data
+```{R read data, echo=FALSE, message=FALSE}
+reduced<-read.csv(file="../raw.data/portal_data_reduced.csv")
+head(reduced)
+```
+
+create a plot
+```{R plot}
+ggplot(reduced, aes(x=weight))+geom_histogram(bins=8)
+```
+
+round up=`r round(4.5555, 2)`

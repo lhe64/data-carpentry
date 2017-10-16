@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"challenge\"\nauthor: \"Lin He\"\ndate: \"August 23, 2017\"\noutput:\n  html_document: default\n  pdf_document: default\n  word_document: default\n---\n\nloading ggplot2 package\n```{R load}\nlibrary(ggplot2)\n```\n\nread the portal data\n```{R read data, echo=FALSE, message=FALSE}\nreduced<-read.csv(file=\"../raw.data/portal_data_reduced.csv\")\nhead(reduced)\n```\n\ncreate a plot\n```{R plot}\nggplot(reduced, aes(x=weight))+geom_histogram(bins=8)\n```\n\nround up=`r round(4.5555, 2)`",
+    "created" : 1503519608407.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "803615324",
+    "id" : "5056F213",
+    "lastKnownWriteTime" : 1503520707,
+    "last_content_update" : 1503520707560,
+    "path" : "C:/Users/linhe/Desktop/datacarpentry_R/code/ch1.Rmd",
+    "project_path" : "ch1.Rmd",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

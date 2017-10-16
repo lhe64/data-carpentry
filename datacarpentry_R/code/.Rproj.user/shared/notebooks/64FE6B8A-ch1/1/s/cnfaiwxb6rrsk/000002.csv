@@ -1,0 +1,2 @@
+"0","reduced<-read.csv(file=""../raw.data/portal_data_reduced.csv"")"
+"0","head(reduced)"

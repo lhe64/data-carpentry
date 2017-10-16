@@ -1,0 +1,40 @@
+---
+title: "capstone"
+author: "Lin He"
+date: "August 23, 2017"
+output: html_document
+---
+loading data
+```{r}
+sv<-read.csv("../raw.data/portal_data_joined.csv")
+sv %>% filter(sex%in%c("M","F")) %>% 
+ggplot(aes(x=sex, y=weight))+geom_boxplot()
+```
+Create a histogram of hindfoot lengths.
+```{r}
+ggplot(sv, aes(x=hindfoot_length))+geom_histogram(bins=8)
+```
+
+Create a scatterplot of hindfoot length vs weight for the species "DM", "DO", and "DS". Use different colors for the three species, and put the three species in different panels.
+```{r}
+p<-sv %>% filter(species_id%in%c("DM", "DO","DS"))
+ggplot(p, aes(x = weight, y = hindfoot_length)) + geom_point(aes(color=species_id))
+```
+
+Create a table of counts of "DM" by plot type for the year 1977.
+```{r}
+sv %>% filter(species_id=="DM", year==1977) %>%group_by(plot_id) %>%  tally
+
+```
+Create a line plot of the counts of "DM" in "Rodent Exclosure" plots over time.
+
+
+
+
+
+
+
+
+
+
+

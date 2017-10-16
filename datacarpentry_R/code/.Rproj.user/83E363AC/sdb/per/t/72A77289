@@ -1,0 +1,22 @@
+{
+    "collab_server" : "",
+    "contents" : "---\ntitle: \"17-08-23reports\"\nauthor: \"Lin He\"\ndate: \"August 23, 2017\"\noutput: html_document\n---\n\n```{r setup, include=FALSE}\nknitr::opts_chunk$set(echo = TRUE)\n```\n\n## R Markdown\n\nThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.\n\nWhen you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:\n\n```{r cars}\nsummary(cars)\n```\n\n## Including Plots\n\nYou can also embed plots, for example:\n\n```{r pressure, echo=FALSE}\nplot(pressure)\n```\n\nNote that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.\n\nReading in of the data file.\n```{r}\nsurveys<-read.csv(file=\"../raw.data/portal_data_reduced.csv\")\nhead(surveys)\n\n```\n\n###bullet list\n\n- item1\n- item2\n\n###numbered list\n\n1. **numbered item1**\n2. _numbered item2_\n\n[text to show](http://the-web-page.com)\n\n\n",
+    "created" : 1503517953089.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2861258589",
+    "id" : "72A77289",
+    "lastKnownWriteTime" : 1503520078,
+    "last_content_update" : 1503520078291,
+    "path" : "C:/Users/linhe/Desktop/datacarpentry_R/code/20170817RMD.Rmd",
+    "project_path" : "20170817RMD.Rmd",
+    "properties" : {
+        "last_setup_crc32" : "549B29F8bb338d19",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
